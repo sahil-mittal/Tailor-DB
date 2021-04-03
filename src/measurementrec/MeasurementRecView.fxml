@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="720.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="measurementrec.MeasurementRecViewController">
+   <children>
+      <Label layoutX="121.0" layoutY="152.0">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="68.0" stroke="BLACK" strokeType="INSIDE" width="720.0" />
+      <Label layoutX="121.0" layoutY="9.0" text="Measurement Recorder" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="131.0" text="Cust. M.No.">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNo" layoutX="241.0" layoutY="131.0" prefHeight="34.0" prefWidth="203.0" promptText="Enter No." />
+      <Button layoutX="324.0" layoutY="643.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="34.0" prefWidth="68.0" text="Search">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="45.0" layoutY="184.0" text="Cust. Name:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="241.0" layoutY="184.0" prefHeight="34.0" prefWidth="203.0" promptText="Enter Name" />
+      <Separator layoutX="10.0" layoutY="236.0" prefHeight="4.0" prefWidth="700.0" />
+      <Label layoutX="29.0" layoutY="261.0" text="Dress:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboDress" editable="true" layoutX="145.0" layoutY="260.0" onAction="#doDress" prefHeight="34.0" prefWidth="182.0" promptText="Select" />
+      <Label layoutX="358.0" layoutY="260.0" text="Specialist:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboSplist" editable="true" layoutX="512.0" layoutY="260.0" prefHeight="34.0" prefWidth="182.0" promptText="Select" />
+      <Label layoutX="26.0" layoutY="330.0" text="Measurements:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="410.0" text="Days:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboDays" editable="true" layoutX="521.0" layoutY="409.0" onAction="#doDay" prefHeight="34.0" prefWidth="182.0" promptText="Select" />
+      <Label layoutX="30.0" layoutY="410.0" text="DoD:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dod" layoutX="143.0" layoutY="409.0" onAction="#doDod" prefHeight="34.0" prefWidth="182.0" />
+      <Label layoutX="215.0" layoutY="481.0" text="Price:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPrice" layoutX="302.0" layoutY="480.0" prefHeight="34.0" prefWidth="203.0" promptText="Enter Amount" />
+      <Label layoutX="36.0" layoutY="553.0" text="Customer's spl wish-">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtWIsh" layoutX="306.0" layoutY="548.0" prefHeight="43.0" prefWidth="387.0" />
+      <Button layoutX="104.0" layoutY="643.0" mnemonicParsing="false" onAction="#doSave" prefHeight="34.0" prefWidth="68.0" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="535.0" layoutY="643.0" mnemonicParsing="false" onAction="#doNew" prefHeight="34.0" prefWidth="68.0" text="New">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="8.0" layoutY="612.0" prefHeight="4.0" prefWidth="700.0" />
+      <TextArea fx:id="txtMmts" layoutX="236.0" layoutY="331.0" prefHeight="20.0" prefWidth="462.0" />
+      <ImageView fitHeight="64.0" fitWidth="139.0" layoutX="608.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../yazdan-tailor-scissor-08-inches_01-500x500.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="139.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../close-classic-design-sewing-machine-260nw-283144706.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="81.0" text="Enter the mobile no. and select the dress to search details of the last order" textFill="#b29f9f">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

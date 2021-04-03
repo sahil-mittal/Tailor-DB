@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="720.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashBoard.DashBoardViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="68.0" stroke="BLACK" strokeType="INSIDE" width="720.0" />
+      <Label layoutX="239.0" layoutY="9.0" text="Dash Board" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="139.0" layoutX="608.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../yazdan-tailor-scissor-08-inches_01-500x500.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="139.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../close-classic-design-sewing-machine-260nw-283144706.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="157.0" layoutX="84.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="157.0" layoutX="481.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="157.0" layoutX="282.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="157.0" layoutX="84.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="157.0" layoutX="481.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="157.0" layoutX="282.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="157.0" layoutX="283.0" layoutY="321.0" onMouseClicked="#doWo" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <ImageView fitHeight="115.0" fitWidth="155.0" layoutX="85.0" layoutY="136.0" onMouseClicked="#doWorkerConsole" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../a-tailor-on-white-background-vector.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="155.0" layoutX="283.0" layoutY="136.0" onMouseClicked="#doMeasurements" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../yellow-measuring-tape-isolated-on-260nw-730249951.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="152.0" layoutX="284.0" layoutY="323.0" onMouseClicked="#doDressDelivered" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../pexels-rene-asmussen-1327446.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="155.0" layoutX="86.0" layoutY="512.0" onMouseClicked="#doWorkerTable" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../1001378641.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="122.0" fitWidth="162.0" layoutX="283.0" layoutY="512.0" onMouseClicked="#doCustTable" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../customer-service-1433640_1280.png" />
+         </image></ImageView>
+      <Label layoutX="86.0" layoutY="251.0" prefHeight="39.0" prefWidth="155.0" text="Worker Console " textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="251.0" prefHeight="39.0" prefWidth="155.0" text="Measurements" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="251.0" prefHeight="39.0" prefWidth="155.0" text="Order Receiver">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="438.0" prefHeight="39.0" prefWidth="155.0" text="Dress Delivered">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="627.0" prefHeight="39.0" prefWidth="155.0" text=" Worker Status">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <Label layoutX="282.0" layoutY="627.0" prefHeight="39.0" prefWidth="155.0" text="CustomerStatus">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <Label layoutX="481.0" layoutY="627.0" prefHeight="39.0" prefWidth="155.0" text="    Table View">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="129.0" fitWidth="152.0" layoutX="483.0" layoutY="136.0" onMouseClicked="#doOrdreceived" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../pexels-pixabay-259756.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="129.0" fitWidth="151.0" layoutX="483.0" layoutY="511.0" onMouseClicked="#doTbl" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../documents-concept-illustration_114360-138.jpg" />
+         </image></ImageView>
+      <Line endX="283.0" endY="321.69287109375" startX="283.0" startY="478.0000305175781" />
+   </children>
+</AnchorPane>

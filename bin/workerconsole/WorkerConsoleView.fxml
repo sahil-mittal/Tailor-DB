@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.MeshView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="720.0" prefHeight="700.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workerconsole.WorkerConsoleViewController">
+   <children>
+      <Separator layoutY="124.0" prefHeight="4.0" prefWidth="700.0" />
+      <Label layoutX="35.0" layoutY="179.0" text="Worker name:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="231.0" layoutY="179.0" prefHeight="34.0" prefWidth="203.0" promptText="Enter Name" />
+      <Button layoutX="457.0" layoutY="176.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="34.0" prefWidth="61.0" text="Fetch">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="35.0" layoutY="267.0" text="Mobile No:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNo" layoutX="231.0" layoutY="266.0" prefHeight="34.0" prefWidth="286.0" promptText="Enter Mob. No." />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c2c2" height="129.0" layoutX="573.0" layoutY="146.0" stroke="BLACK" strokeType="INSIDE" width="118.0" />
+      <ImageView fx:id="image" fitHeight="129.0" fitWidth="118.0" layoutX="573.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="597.0" layoutY="292.0" mnemonicParsing="false" onAction="#doBrowse" prefHeight="34.0" prefWidth="70.0" text="Browse">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="35.0" layoutY="357.0" text="Address:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="231.0" layoutY="356.0" prefHeight="34.0" prefWidth="426.0" promptText="Enter Address" />
+      <Separator layoutX="531.0" layoutY="124.0" orientation="VERTICAL" prefHeight="210.0" prefWidth="4.0" />
+      <Label layoutX="35.0" layoutY="443.0" text="Specialist for:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboSpl" editable="true" layoutX="231.0" layoutY="442.0" onAction="#doSpl" prefHeight="34.0" prefWidth="182.0" promptText="Select" />
+      <TextField fx:id="txtSel" layoutX="433.0" layoutY="442.0" prefHeight="34.0" prefWidth="226.0" promptText="Selected" />
+      <Separator layoutX="532.0" layoutY="337.0" prefHeight="4.0" prefWidth="182.0" />
+      <Button layoutX="61.0" layoutY="567.0" mnemonicParsing="false" onAction="#doSave" prefHeight="34.0" prefWidth="86.0" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <MeshView />
+      <Button layoutX="231.0" layoutY="567.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="34.0" prefWidth="86.0" text="Update">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="391.0" layoutY="567.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="34.0" prefWidth="86.0" text="Delete">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="546.0" layoutY="567.0" mnemonicParsing="false" onAction="#doNew" prefHeight="34.0" prefWidth="86.0" text="New">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutY="520.0" prefHeight="4.0" prefWidth="720.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="68.0" stroke="BLACK" strokeType="INSIDE" width="720.0" />
+      <Label layoutX="182.0" layoutY="9.0" text="Workers Console" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="139.0" layoutX="608.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../yazdan-tailor-scissor-08-inches_01-500x500.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="139.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../close-classic-design-sewing-machine-260nw-283144706.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

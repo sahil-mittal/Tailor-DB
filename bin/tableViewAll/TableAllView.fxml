@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="720.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tableViewAll.TableAllViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="68.0" stroke="BLACK" strokeType="INSIDE" width="720.0" />
+      <Label layoutX="246.0" layoutY="9.0" text="Table View" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="139.0" layoutX="608.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../yazdan-tailor-scissor-08-inches_01-500x500.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="139.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../close-classic-design-sewing-machine-260nw-283144706.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblAll" layoutX="57.0" layoutY="347.0" prefHeight="309.0" prefWidth="602.0" />
+      <Label layoutX="22.0" layoutY="93.0" text="Worker name:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="571.0" layoutY="93.0" mnemonicParsing="false" onAction="#doFind" prefHeight="34.0" prefWidth="130.0" text="Finds Records">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="24.0" layoutY="163.0" text="Cust M.No.:">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNo" layoutX="218.0" layoutY="162.0" prefHeight="34.0" prefWidth="204.0" promptText="Enter Mob. No." />
+      <ComboBox fx:id="comboWname" layoutX="221.0" layoutY="92.0" prefHeight="34.0" prefWidth="150.0" promptText="Name" />
+      <ComboBox fx:id="comboStatus" layoutX="401.0" layoutY="92.0" prefHeight="34.0" prefWidth="150.0" promptText="Status" />
+      <Separator layoutX="6.0" layoutY="146.0" prefHeight="4.0" prefWidth="700.0" />
+      <Button layoutX="458.0" layoutY="162.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="34.0" prefWidth="130.0" text="Search">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="291.0" layoutY="294.0" mnemonicParsing="false" onAction="#doFull" prefHeight="34.0" prefWidth="130.0" text="Show Full Data">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="8.0" layoutY="209.0" prefHeight="4.0" prefWidth="700.0" />
+      <Label layoutX="24.0" layoutY="223.0" text="Deadline-">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date" layoutX="218.0" layoutY="224.0" prefHeight="34.0" prefWidth="204.0" />
+      <Button layoutX="458.0" layoutY="225.0" mnemonicParsing="false" onAction="#doGetAll" prefHeight="34.0" prefWidth="130.0" text="Get All">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutY="276.0" prefHeight="4.0" prefWidth="700.0" />
+   </children>
+</AnchorPane>
